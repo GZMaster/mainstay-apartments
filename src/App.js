@@ -7,7 +7,7 @@ export default function App() {
     <div className="App">
       <NavBar />
       <Outlet />
-      <Footer />p
+      <Footer />
     </div>
   );
 }
