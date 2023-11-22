@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { BurgerMenu } from "./index";
+import { BurgerMenu } from "../index";
 import { UseMediaQuery } from "../../utils";
 // import logo from "../../assets/images/logo.svg";
 // import "../../styles/NavBar.scss";
