@@ -11,5 +11,12 @@
     url("../assets/fonts/Poppins/Poppins-Regular.ttf") format("ttf");
 }
 
+@font-face {
+  font-family: "Atteron";
+  src: local("Atteron"),
+    url("../assets/fonts/Atteron/Atteron.ttf") format("ttf");
+}
+
 $Montserrat: "Montserrat", sans-serif;
 $Poppins: "Poppins", sans-serif;
+$Atteron: "Atteron", sans-serif;

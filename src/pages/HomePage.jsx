@@ -8,7 +8,7 @@ const HomePage = () => {
       <Bookings />
       <Locate />
       <Services />
-      <Luxury /> 
+      <Luxury />
     </div>
   );
 };

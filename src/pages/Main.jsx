@@ -11,7 +11,7 @@ import {
 
 const Main = () => {
   return (
-    <>
+    <div className="mainpage_container">
       <Hero />
       <About />
       <Bookings />
@@ -19,7 +19,7 @@ const Main = () => {
       <Options />
       <Locate />
       <Contact />
-    </>
+    </div>
   );
 };
 

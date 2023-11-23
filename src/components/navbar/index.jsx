@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { BurgerMenu } from "../index";
 import { UseMediaQuery } from "../../utils";
 import logo from "../../assets/images/logo.svg";
-// import "../../styles/NavBar.scss";
+import "../../styles/NavBar.scss";
 
 export default function Navbar() {
   const navigate = useNavigate();
