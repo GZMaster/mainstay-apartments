@@ -9,17 +9,29 @@ export default function Navbar() {
   const navigate = useNavigate();
   let isPageWide = UseMediaQuery("(min-width: 769px)");
 
+  const handleNavigation = (path) => {
+    navigate(path);
+  };
+
   return (
     <>
       {isPageWide ? (
         <nav className={"nav_component"}>
-          <button onClick={navigate("/")}>Home</button>
-          <button onClick={navigate("/")}>About us</button>
-          <button onClick={navigate("/")}>Restaurant & Dining</button>
-          <img src={logo} alt="" />
-          <button onClick={navigate("/")}>Rooms & Facilities</button>
-          <button onClick={navigate("/")}>Our location</button>
-          <button onClick={navigate("/")}>Contact us</button>
+          <button onClick={() => handleNavigation("/home")}>Home</button>
+          <button onClick={() => handleNavigation("/about")}>About us</button>
+          <button onClick={() => handleNavigation("/bookings")}>
+            Restaurant & Dining
+          </button>
+          <img src={logo} alt="" onClick={() => handleNavigation("/")} />
+          <button onClick={() => handleNavigation("/")}>
+            Luxury apartments
+          </button>
+          <button onClick={() => handleNavigation("/location")}>
+            Our location
+          </button>
+          <button onClick={() => handleNavigation("/contact")}>
+            Contact us
+          </button>
         </nav>
       ) : (
         <BurgerMenu />

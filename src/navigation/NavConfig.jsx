@@ -1,13 +1,24 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import App from "../App";
-import Main from "../pages";
+import Main, {
+  HomePage,
+  AboutPage,
+  OptionsPage,
+  ContactPage,
+  LocatePage,
+} from "../pages";
 
 const NavConfig = () => {
   return (
     <Routes>
       <Route path="/" element={<App />}>
-        <Route path="/" element={<Main />} />
+        <Route index element={<Main />} />
+        <Route path="home" element={<HomePage />} />
+        <Route path="about" element={<AboutPage />} />
+        <Route path="bookings" element={<OptionsPage />} />
+        <Route path="contact" element={<ContactPage />} />
+        <Route path="location" element={<LocatePage />} />
       </Route>
     </Routes>
   );
