@@ -2,34 +2,40 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { BurgerMenu } from "../index";
 import { UseMediaQuery } from "../../utils";
-// import logo from "../../assets/images/logo.svg";
+import logo from "../../assets/images/logo.svg";
 // import "../../styles/NavBar.scss";
 
 export default function Navbar() {
   const navigate = useNavigate();
   let isPageWide = UseMediaQuery("(min-width: 769px)");
 
-  return (
-    <nav className={"nav__component"}>
-      <div className="nav__header">
-        {/* <img className="logo" src={logo} alt="" onClick={() => navigate("/")} /> */}
-      </div>
+  const handleNavigation = (path) => {
+    navigate(path);
+  };
 
+  return (
+    <>
       {isPageWide ? (
-        <div className="links__content">
-          <button onClick={() => navigate("/about")}>About Us</button>
-          <button onClick={() => navigate("/enrollment")}>Enrollment</button>
-          <button>Youtube</button>
-          <button
-            className="contact_button"
-            onClick={() => navigate("/contact")}
-          >
-            Contact Us
+        <nav className={"nav_component"}>
+          <button onClick={() => handleNavigation("/home")}>Home</button>
+          <button onClick={() => handleNavigation("/about")}>About us</button>
+          <button onClick={() => handleNavigation("/bookings")}>
+            Restaurant & Dining
           </button>
-        </div>
+          <img src={logo} alt="" onClick={() => handleNavigation("/")} />
+          <button onClick={() => handleNavigation("/")}>
+            Luxury apartments
+          </button>
+          <button onClick={() => handleNavigation("/location")}>
+            Our location
+          </button>
+          <button onClick={() => handleNavigation("/contact")}>
+            Contact us
+          </button>
+        </nav>
       ) : (
         <BurgerMenu />
       )}
-    </nav>
+    </>
   );
 }
