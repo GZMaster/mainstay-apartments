@@ -17,7 +17,7 @@ const Footer = () => {
       <div className="footer_wrapper">
         <img src={footerlogo} alt="footerlogo" />
 
-        <h1>MAINSTAY APARTMENTS & SUITES</h1>
+        <h1>MAINSTAY APARTMENTS SUITES</h1>
 
         <div className="footer_links">
           <div>
@@ -28,7 +28,6 @@ const Footer = () => {
             <h3>Booking.com</h3>
             <img src={dot} alt="dot" />
             <h3>Find us</h3>
-            <img src={dot} alt="dot" />
           </div>
 
           <div>
