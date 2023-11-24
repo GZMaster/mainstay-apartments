@@ -11,6 +11,7 @@ import Options from "./options";
 import OptionsCard from "./cards/optionsCard";
 import Locate from "./locate";
 import Contact from "./contact";
+import Luxury from "./luxury";
 
 export {
   Navbar,
@@ -26,4 +27,5 @@ export {
   ServiceCard,
   OptionsCard,
   Contact,
+  Luxury,
 };

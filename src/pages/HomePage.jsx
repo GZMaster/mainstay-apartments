@@ -1,5 +1,6 @@
 import React from "react";
-import { Hero, Bookings, Services, Locate } from "../components";
+import { Hero, Bookings, Services, Locate, Luxury } from "../components";
+import "../styles/Pages.scss";
 
 const HomePage = () => {
   return (
@@ -8,6 +9,7 @@ const HomePage = () => {
       <Bookings />
       <Locate />
       <Services />
+      <Luxury />
     </div>
   );
 };

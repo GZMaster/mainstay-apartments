@@ -1,4 +1,6 @@
 import React from "react";
+import "../../styles/About.scss";
+import aboutimg from "../../assets/images/aboutimg.png";
 
 const About = () => {
   return (
@@ -16,13 +18,13 @@ const About = () => {
           Our dedicated staff goes above and beyond to ensure your needs are
           met, making your stay hassle-free and enjoyable and our on-site
           restaurants offer an array of culinary delights, ensuring you savor
-          every moment of your visit.{" "}
+          every moment of your visit.
         </p>
         <button>Learn More</button>
       </div>
 
       <div className="about_right">
-        <img src="" alt="aboutimg" />
+        <img src={aboutimg} alt="aboutimg" />
       </div>
     </div>
   );
