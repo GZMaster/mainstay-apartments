@@ -1,0 +1,79 @@
+@import "./_colors.scss";
+@import "./_breakpoints.scss";
+@import "./_fonts.scss";
+
+.hero_wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  position: relative;
+
+  > header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 52.4375rem;
+    justify-content: space-around;
+    z-index: 1;
+    gap: 0.75rem;
+
+    > h3 {
+      color: $subheader;
+      text-align: center;
+      font-family: $Montserrat;
+      font-size: 0.9375rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 160%; /* 1.5rem */
+      font-variant: all-small-caps;
+      letter-spacing: 0.21563rem;
+    }
+
+    > h1 {
+      color: $header;
+      text-align: center;
+      font-family: $Atteron;
+      font-size: 4.5rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    > p {
+      color: $white;
+      text-align: center;
+      font-family: Montserrat;
+      font-size: 0.9375rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 160%; /* 1.5rem */
+    }
+
+    > button {
+      display: inline-flex;
+      padding: 0.875rem 2.375rem;
+      justify-content: center;
+      align-items: center;
+      gap: 0.625rem;
+      border-radius: 2.625rem;
+      border: none;
+      background: $button-bg;
+      color: $black;
+      font-family: Montserrat;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+  }
+
+  > img {
+    position: absolute;
+    top: 50%; /* Move the top edge of the image to the middle of the container */
+    left: 50%; /* Move the left edge of the image to the middle of the container */
+    transform: translate(-50%, -50%); /* Center the image precisely */
+    max-width: 100%; /* Optional: Ensure the image doesn't exceed the container's width */
+    max-height: 100%; /* Optional: Ensure the image doesn't exceed the container's height */
+  }
+}

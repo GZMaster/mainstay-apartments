@@ -1,5 +1,6 @@
 import React from "react";
 import { Locate } from "../components";
+import "../styles/Pages.scss";
 
 const LocatePage = () => {
   return (

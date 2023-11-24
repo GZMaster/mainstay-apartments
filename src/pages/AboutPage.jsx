@@ -1,5 +1,6 @@
 import React from "react";
 import { About, Services } from "../components";
+import "../styles/Pages.scss";
 
 const AboutPage = () => {
   return (

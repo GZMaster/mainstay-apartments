@@ -8,6 +8,7 @@ import {
   Locate,
   Contact,
 } from "../components";
+import "../styles/Pages.scss";
 
 const Main = () => {
   return (
