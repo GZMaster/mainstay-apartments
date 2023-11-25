@@ -1,0 +1,97 @@
+@import "./_colors.scss";
+@import "./_breakpoints.scss";
+@import "./_fonts.scss";
+
+.locate_wrapper {
+  height: 100vh;
+  background: $background;
+  padding: 5rem 6.25rem;
+
+  > div {
+    width: 76.375rem;
+    height: 30.625rem;
+    flex-shrink: 0;
+    border-radius: 1.5rem;
+    border: 9px solid #18191c;
+    background: #18191c;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.99rem 0.6rem;
+
+    > .locate_left {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1.25rem;
+      padding: calc(4.5rem - 1.99rem) calc(3.88rem - 0.6rem);
+ 
+      > h3 {
+        color: #808080;
+        font-family: $Montserrat;
+        font-size: 0.9375rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 160%; /* 1.5rem */
+        font-variant: all-small-caps;
+        letter-spacing: 0.21563rem;
+      }
+
+      > h1 {
+        color: #fff;
+        font-family: $Atteron;
+        font-size: 3rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 146.5%; /* 4.395rem */
+      }
+
+      > button {
+        display: inline-flex;
+        padding: 0.875rem 2.375rem;
+        justify-content: center;
+        align-items: center;
+        gap: 0.625rem;
+        border-radius: 2.625rem;
+        border: 2px solid #3ddcff;
+        background-color: transparent;
+        color: #3ddcff;
+        font-family: $Montserrat;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+      }
+
+      .locate_icons {
+        display: inline-flex;
+        align-items: center;
+        gap: 1.25rem;
+        flex-direction: row;
+
+        > p {
+          width: 17.0625rem;
+          color: rgba(255, 255, 255, 0.85);
+          font-family: $Montserrat;
+          font-size: 0.875rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 197.5%; /* 1.72813rem */
+        }
+
+        > img {
+          width: 1.5rem;
+          height: 1.5rem;
+        }
+      }
+    }
+
+    > .locate_right {
+      width: 28.53825rem;
+      height: 26.70038rem;
+      flex-shrink: 0;
+      border-radius: 1.5625rem;
+    }
+  }
+}
