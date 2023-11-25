@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import "../../styles/Contact.scss";
+import contactimg from "../../assets/images/contactimg.png";
 
 const Contact = () => {
   const [toSend, setToSend] = useState({
@@ -32,54 +34,52 @@ const Contact = () => {
 
       <div>
         <div className="contact_left">
-          <img src="" alt="contactimg" />
+          <img src={contactimg} alt="contactimg" />
         </div>
 
-        <div className="contact_right">
-          <form className="C_Form" onSubmit={onSubmit}>
-            <label className="form_label">Name</label>
-            <input
-              type="text"
-              placeholder="Your Name"
-              name="from_name"
-              value={toSend.from_name}
-              className="form_control"
-              onChange={handleChange}
-            />
-            <label className="form_label">Phone Number</label>
-            <input
-              type="number"
-              placeholder="Phone number"
-              name="from_number"
-              value={toSend.from_number}
-              className="form_control"
-              onChange={handleChange}
-            />
-            <label className="form_label">Email</label>
-            <input
-              type="email"
-              placeholder="Email address"
-              name="from_email"
-              value={toSend.from_email}
-              className="form_control"
-              onChange={handleChange}
-            />
-            <label className="form_label">Message</label>
-            <textarea
-              name="message"
-              placeholder="Message"
-              type="text"
-              cols="30"
-              rows="10"
-              value={toSend.message}
-              className="form_control"
-              onChange={handleChange}
-            />
-            <button type="submit" className="C_btn">
-              Send Message
-            </button>
-          </form>
-        </div>
+        <form className="contact_right C_Form" onSubmit={onSubmit}>
+          <label className="form_label">Name</label>
+          <input
+            type="text"
+            placeholder="Your Name"
+            name="from_name"
+            value={toSend.from_name}
+            className="form_control"
+            onChange={handleChange}
+          />
+          <label className="form_label">Phone Number</label>
+          <input
+            type="number"
+            placeholder="Phone number"
+            name="from_number"
+            value={toSend.from_number}
+            className="form_control"
+            onChange={handleChange}
+          />
+          <label className="form_label">Email</label>
+          <input
+            type="email"
+            placeholder="Email address"
+            name="from_email"
+            value={toSend.from_email}
+            className="form_control"
+            onChange={handleChange}
+          />
+          <label className="form_label">Message</label>
+          <textarea
+            name="message"
+            placeholder="Message"
+            type="text"
+            cols="30"
+            rows="10"
+            value={toSend.message}
+            className="form_control"
+            onChange={handleChange}
+          />
+          <button type="submit" className="C_btn">
+            Send Message
+          </button>
+        </form>
       </div>
     </div>
   );

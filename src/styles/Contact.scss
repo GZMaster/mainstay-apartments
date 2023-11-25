@@ -1,0 +1,126 @@
+@import "./_colors.scss";
+@import "./_breakpoints.scss";
+@import "./_fonts.scss";
+
+.contact_wrapper {
+  display: flex;
+  //   height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background: $background;
+  padding: 5rem 6.25rem;
+  gap: 4.25rem;
+
+  > header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    > h3 {
+      color: #808080;
+      font-family: $Montserrat;
+      font-size: 0.9375rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 160%; /* 1.5rem */
+      font-variant: all-small-caps;
+      letter-spacing: 0.21563rem;
+    }
+
+    > h1 {
+      color: #18191c;
+      text-align: center;
+      font-family: $Atteron;
+      font-size: 3rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    > p {
+      width: 25.125rem;
+      color: rgba(24, 25, 28, 0.9);
+      text-align: center;
+      font-family: $Montserrat;
+      font-size: 0.875rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 165%; /* 1.44375rem */
+    }
+  }
+
+  > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+
+    > .contact_right {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1.5rem;
+
+      > label {
+        color: #18191c;
+        font-family: $Montserrat;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+
+      > input {
+        display: flex;
+        width: 27.5625rem;
+        padding: 1.125rem 1.25rem;
+        align-items: flex-start;
+        gap: 0.625rem;
+        border-radius: 1.9375rem;
+        border: 2px solid rgba(0, 0, 0, 0.17);
+        background-color: transparent;
+        color: #808080;
+        font-family: $Montserrat;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+
+      > textarea {
+        display: flex;
+        width: 27.5625rem;
+        height: 11rem;
+        padding: 0.875rem 1.25rem;
+        align-items: flex-start;
+        gap: 0.625rem;
+        border-radius: 1.25rem;
+        border: 2px solid rgba(0, 0, 0, 0.17);
+        background-color: transparent;
+      }
+
+      > button {
+        display: flex;
+        padding: 0.875rem 2.375rem;
+        justify-content: center;
+        align-items: center;
+        gap: 0.625rem;
+        border-radius: 2.625rem;
+        background: #3ddcff;
+        border: none;
+        color: #000;
+        font-family: $Montserrat;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+      }
+    }
+
+    // > .contact_left {
+    // }
+  }
+}

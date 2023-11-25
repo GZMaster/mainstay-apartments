@@ -1,4 +1,6 @@
 import React from "react";
+import "../../styles/Luxury.scss";
+import luxuryimg from "../../assets/images/luxuryimg.png";
 
 const Luxury = () => {
   return (
@@ -8,17 +10,17 @@ const Luxury = () => {
         <h1>Discover Our Exclusive Luxury Apartments</h1>
       </header>
 
-      <body>
+      <div>
         <div className="luxury_left">
-          <img src="" alt="luxuryimg" />
+          <img src={luxuryimg} alt="luxuryimg" />
         </div>
 
-        <div>
+        <div className="luxury_right">
           <p>
             Escape to a world of sophistication and refinement with our distinct
             Luxury Apartments. Unmatched in style and comfort, these residences
             offer a private retreat within our expansive hotel and apartments
-            group.{" "}
+            group.
           </p>
           <p>
             Elevate your stay with opulent amenities and bespoke services,
@@ -28,7 +30,7 @@ const Luxury = () => {
 
           <button>View our luxury apartments </button>
         </div>
-      </body>
+      </div>
     </div>
   );
 };
