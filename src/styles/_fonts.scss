@@ -14,12 +14,12 @@
 }
 
 @font-face {
-  font-family: "Atteron Regular";
-  src: local("Atteron Regular")
-    url("../assets/fonts/Atteron_Regular/Atteron\ Regular.otf") format("otf");
+  font-family: "Atteron";
+  src: local("Atteron"),
+    url("../assets/fonts/Atteron/Atteron.ttf") format("ttf");
 }
 
 $Montserrat: "Montserrat", sans-serif;
 $Poppins: "Poppins", sans-serif;
 $Atteron: "Atteron Personal Use", sans-serif;
-// $Atteron: "Atteron Regular", sans-serif;
+// $Atteron: "Atteron", sans-serif;

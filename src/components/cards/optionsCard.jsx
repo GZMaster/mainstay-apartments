@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import "../../styles/OptionsCard.scss";
 
 const OptionsCard = (props) => {
   return (

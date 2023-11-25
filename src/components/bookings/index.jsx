@@ -1,6 +1,7 @@
 import React from "react";
 import { RoomCard } from "../../components";
 import RoomData from "../../assets/data/RoomData";
+import "../../styles/Bookings.scss";
 
 const Bookings = () => {
   return (
@@ -10,15 +11,19 @@ const Bookings = () => {
         <h1>Luxurious Rooms for Your Perfect Stay</h1>
       </header>
 
-      <body>
+      <div>
         <div className="roomcard_wrapper">
-          {RoomData.forEach(({ id, title, backgroundImage }) => (
-            <RoomCard id={id} backgroundImage={backgroundImage} title={title} />
+          {RoomData.map((room) => (
+            <RoomCard
+              key={room.id}
+              backgroundImage={room.img}
+              title={room.title}
+            />
           ))}
         </div>
 
-        <button>Book room now</button>
-      </body>
+        <button>Make reservations</button>
+      </div>
     </div>
   );
 };

@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import "../../styles/RoomCard.scss";
 
 const RoomCard = (props) => {
   return (
@@ -10,15 +11,15 @@ const RoomCard = (props) => {
       }}
     >
       <div className="roomcard_title">
-        <h1>{props.title}</h1>
+        <h3>{props.title}</h3>
       </div>
     </div>
   );
 };
 
 RoomCard.propTypes = {
-  backgroundImage: PropTypes.string,
-  title: PropTypes.string,
+  backgroundImage: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
   classname: PropTypes.string,
 };
 

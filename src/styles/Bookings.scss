@@ -1,0 +1,77 @@
+@import "./_colors.scss";
+@import "./_breakpoints.scss";
+@import "./_fonts.scss";
+
+.bookings_wrapper {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: $background;
+  padding: 5rem 6.25rem;
+
+  > header {
+    width: 41.6875rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    > h3 {
+      color: #808080;
+      font-family: $Montserrat;
+      font-size: 0.9375rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 160%; /* 1.5rem */
+      font-variant: all-small-caps;
+      letter-spacing: 0.21563rem;
+    }
+
+    > h1 {
+      color: #000;
+      text-align: center;
+      font-family: $Atteron;
+      font-size: 3rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 146.5%; /* 4.395rem */
+    }
+  }
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.94rem;
+
+    > .roomcard_wrapper {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: auto;
+      gap: 1.25rem;
+    }
+
+    > button {
+      display: inline-flex;
+      padding: 0.875rem 2.375rem;
+      justify-content: center;
+      align-items: center;
+      gap: 0.625rem;
+      border-radius: 2.625rem;
+      border: none;
+      background: #3ddcff;
+      color: #000;
+      font-family: $Montserrat;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+  }
+}
