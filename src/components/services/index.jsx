@@ -1,6 +1,6 @@
 import React from "react";
-import { ServiceCard } from "../components";
-import ServiceData from "../assets/data/ServicesData";
+import { ServiceCard } from "..";
+import ServiceData from "../../assets/data/ServicesData";
 
 const Services = () => {
   return (
@@ -10,7 +10,7 @@ const Services = () => {
         <h1>Our Amenities and Services</h1>
       </header>
 
-      <body>
+      <div>
         {ServiceData.forEach((service) => (
           <ServiceCard
             id={service.id}
@@ -19,7 +19,7 @@ const Services = () => {
             description={service.description}
           />
         ))}
-      </body>
+      </div>
     </div>
   );
 };

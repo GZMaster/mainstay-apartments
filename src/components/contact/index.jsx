@@ -30,7 +30,7 @@ const Contact = () => {
         </p>
       </header>
 
-      <body>
+      <div>
         <div className="contact_left">
           <img src="" alt="contactimg" />
         </div>
@@ -80,7 +80,7 @@ const Contact = () => {
             </button>
           </form>
         </div>
-      </body>
+      </div>
     </div>
   );
 };

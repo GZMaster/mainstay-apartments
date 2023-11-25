@@ -10,7 +10,7 @@ const Options = () => {
         <img src="" alt="optionsbg" />
       </header>
 
-      <body>
+      <div>
         {OptionsData.forEach((option) => {
           <OptionsCard
             id={option.id}
@@ -19,7 +19,7 @@ const Options = () => {
             description={option.description}
           />;
         })}
-      </body>
+      </div>
     </div>
   );
 };

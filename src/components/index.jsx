@@ -4,7 +4,7 @@ import BurgerMenu from "./burgermenu";
 import Hero from "./hero";
 import About from "./about";
 import Bookings from "./bookings";
-import Services from "./services.index";
+import Services from "./services";
 import RoomCard from "./cards/roomCard";
 import ServiceCard from "./cards/serviceCard";
 import Options from "./options";
