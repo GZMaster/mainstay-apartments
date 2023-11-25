@@ -26,7 +26,7 @@ const Luxury = () => {
             realm where luxury knows no bounds
           </p>
 
-          <button>View our luxury apartments</button>
+          <button>View our luxury apartments </button>
         </div>
       </body>
     </div>
