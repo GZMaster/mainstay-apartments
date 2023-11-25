@@ -1,0 +1,70 @@
+@import "./_colors.scss";
+@import "./_breakpoints.scss";
+@import "./_fonts.scss";
+
+.options_wrapper {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: $background;
+  padding: 5rem 6.25rem;
+  gap: 4.75rem;
+
+  > header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 52.4375rem;
+
+    .behindheader {
+      width: 52.4375rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #18191c;
+      text-align: center;
+      font-family: $Atteron;
+      font-size: 4.5rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    > div {
+      z-index: 1;
+      width: 30.125rem;
+      height: 24.8125rem;
+      flex-shrink: 0;
+      overflow: hidden;
+
+      > .frontheader {
+        overflow: hidden;
+        max-width: 100%;
+        width: 52.4375rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        text-align: center;
+        font-family: $Atteron;
+        font-size: 4.5rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+  }
+
+  > div {
+    width: 100%;
+    display: flex;
+    width: 72.4375rem;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
