@@ -33,6 +33,10 @@
       line-height: 160%; /* 1.5rem */
       font-variant: all-small-caps;
       letter-spacing: 0.21563rem;
+
+      @include mobile {
+        font-size: 0.4375rem;
+      }
     }
 
     > h1 {
@@ -42,6 +46,10 @@
       font-style: normal;
       font-weight: 400;
       line-height: normal;
+
+      @include mobile {
+        font-size: 1.5rem;
+      }
     }
   }
 
