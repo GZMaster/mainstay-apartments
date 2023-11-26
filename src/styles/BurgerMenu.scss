@@ -11,17 +11,15 @@
 }
 
 .panel {
-  background-color: white;
   transition: all 0.4s cubic-bezier(0.42, 0, 0.34, 1.01);
   position: fixed;
   z-index: -1;
-  right: -100%;
-  top: 48px;
+  top: 5rem;
   height: fit-content;
   visibility: hidden;
   opacity: 0;
   display: flex;
-  box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+  background: #18191c;
 
   &.open {
     visibility: visible;
@@ -32,46 +30,20 @@
 }
 
 .panel ul {
-  width: 100%;
-  padding: 1rem;
-  padding-bottom: 2rem;
-  flex-shrink: 0;
-  background: $Hambuger-bg;
+  display: flex;
+  width: 46.5rem;
+  padding: 4.5rem 5rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3.75rem;
 
-  li {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  > li {
     list-style: none;
-    font-size: 1.4rem;
-    padding: 5px;
-    text-align: center;
-
-    & + li {
-      margin-top: 1rem;
-    }
-
-    > button {
-      border: none;
-      background-color: transparent;
-      color: #fff;
-      font-family: Poppins;
-      font-size: 0.9375rem;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
-    }
-
-    > .contact_button {
-      display: flex;
-      padding: 0.625rem 1.125rem;
-      justify-content: center;
-      align-items: center;
-      gap: 0.625rem;
-      border-radius: 1.875rem;
-      border: 1.5px solid #ffd726;
-      background-color: transparent;
-    }
+    color: #fff;
+    font-family: $Montserrat;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
   }
 }

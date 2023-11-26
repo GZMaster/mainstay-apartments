@@ -5,7 +5,7 @@ import "../../styles/RoomCard.scss";
 const RoomCard = (props) => {
   return (
     <div
-      className={`roomcard ${props.classname}`}
+      className="roomcard"
       style={{
         backgroundImage: `url(${props.backgroundImage})`,
       }}

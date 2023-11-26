@@ -4,7 +4,7 @@
 
 .options_wrapper {
   display: flex;
-  height: 100vh;
+  // height: 100vh;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
@@ -12,20 +12,50 @@
   padding: 5rem 6.25rem;
   gap: 4.75rem;
 
+  @include mobile {
+    padding: 5rem 3.125rem;
+    // max-height: 20rem;
+  }
+
   > header {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    width: 52.4375rem;
+    max-width: 52.4375rem;
+    width: 100%;
 
-    .behindheader {
+    > h1 {
+      overflow: hidden;
       width: 52.4375rem;
+      width: 100%;
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      color: #18191c; 
+      color: #fff;
+      text-align: center;
+      font-family: $Atteron;
+      font-size: 4.5rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      z-index: 2;
+
+      @include mobile {
+        max-width: 36.5rem;
+        font-size: 1.8rem;
+      }
+    }
+
+    .behindheader {
+      max-width: 52.4375rem;
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #18191c;
       text-align: center;
       font-family: $Atteron;
       font-size: 4.5rem;
@@ -36,10 +66,14 @@
 
     > div {
       z-index: 1;
-      width: 30.125rem;
       height: 24.8125rem;
       flex-shrink: 0;
       overflow: hidden;
+
+      @include mobile {
+        width: 12.4rem;
+        height: 9.875rem;
+      }
 
       > .frontheader {
         overflow: hidden;
@@ -63,8 +97,13 @@
   > div {
     width: 100%;
     display: flex;
-    width: 72.4375rem;
+    max-width: 72.4375rem;
+    width: 100%;
     justify-content: space-between;
     align-items: flex-start;
+
+    @include mobile {
+      flex-direction: column;
+    }
   }
 }

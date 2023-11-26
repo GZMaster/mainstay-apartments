@@ -23,7 +23,7 @@ export default function Navbar() {
             Restaurant & Dining
           </button>
           <img src={logo} alt="" onClick={() => handleNavigation("/")} />
-          <button onClick={() => handleNavigation("/")}>
+          <button onClick={() => handleNavigation("/home")}>
             Luxury apartments
           </button>
           <button onClick={() => handleNavigation("/location")}>
@@ -34,7 +34,11 @@ export default function Navbar() {
           </button>
         </nav>
       ) : (
-        <BurgerMenu />
+        <nav className={"nav_component"}>
+          <img src={logo} alt="" onClick={() => handleNavigation("/")} />
+
+          <BurgerMenu />
+        </nav>
       )}
     </>
   );

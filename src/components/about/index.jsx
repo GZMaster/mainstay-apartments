@@ -23,9 +23,7 @@ const About = () => {
         <button>Learn More</button>
       </div>
 
-      <div className="about_right">
-        <img src={aboutimg} alt="aboutimg" />
-      </div>
+      <img className="about_right" src={aboutimg} alt="aboutimg" />
     </div>
   );
 };

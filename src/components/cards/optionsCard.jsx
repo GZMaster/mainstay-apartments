@@ -4,7 +4,7 @@ import "../../styles/OptionsCard.scss";
 
 const OptionsCard = (props) => {
   return (
-    <div className={`roomcard ${props.classname}`}>
+    <div className={`optioncard ${props.classname}`}>
       <img src={props.icon} alt="" />
       <h1>{props.title}</h1>
       <p>{props.description}</p>

@@ -11,9 +11,7 @@ const Luxury = () => {
       </header>
 
       <div>
-        <div className="luxury_left">
-          <img src={luxuryimg} alt="luxuryimg" />
-        </div>
+        <img className="luxury_left" src={luxuryimg} alt="luxuryimg" />
 
         <div className="luxury_right">
           <p>

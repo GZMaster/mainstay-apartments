@@ -32,9 +32,7 @@ const Locate = () => {
           <button>Contact us</button>
         </div>
 
-        <div className="locate_right">
-          <img src={locateimg} alt="mapimg" />
-        </div>
+        <img className="locate_right" src={locateimg} alt="mapimg" />
       </div>
     </div>
   );
