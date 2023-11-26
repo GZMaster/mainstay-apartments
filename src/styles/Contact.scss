@@ -4,13 +4,17 @@
 
 .contact_wrapper {
   display: flex;
-  //   height: 100vh;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   background: $background;
   padding: 5rem 6.25rem;
   gap: 4.25rem;
+
+  @include mobile {
+    padding: 2.5rem 2rem;
+    gap: 2rem;
+  }
 
   > header {
     display: flex;
@@ -57,12 +61,22 @@
     align-items: center;
     justify-content: space-around;
     width: 100%;
+    gap: 6.5rem;
+
+    @include mobile {
+      flex-direction: column-reverse;
+      justify-content: space-between;
+    }
 
     > .contact_right {
       display: inline-flex;
       flex-direction: column;
       align-items: flex-start;
       gap: 1.5rem;
+
+      @include mobile {
+        width: 100%;
+      }
 
       > label {
         color: #18191c;
@@ -71,11 +85,16 @@
         font-style: normal;
         font-weight: 500;
         line-height: normal;
+
+        @include mobile {
+          font-size: 0.8rem;
+        }
       }
 
       > input {
         display: flex;
-        width: 27.5625rem;
+        max-width: 27.5625rem;
+        width: 100%;
         padding: 1.125rem 1.25rem;
         align-items: flex-start;
         gap: 0.625rem;
@@ -88,11 +107,17 @@
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+
+        @include mobile {
+          font-size: 0.8rem;
+          width: 90%;
+        }
       }
 
       > textarea {
         display: flex;
-        width: 27.5625rem;
+        max-width: 27.5625rem;
+        width: 100%;
         height: 11rem;
         padding: 0.875rem 1.25rem;
         align-items: flex-start;
@@ -100,6 +125,11 @@
         border-radius: 1.25rem;
         border: 2px solid rgba(0, 0, 0, 0.17);
         background-color: transparent;
+
+        @include mobile {
+          font-size: 0.8rem;
+          width: 90%;
+        }
       }
 
       > button {
@@ -120,7 +150,11 @@
       }
     }
 
-    // > .contact_left {
-    // }
+    > .contact_left {
+      @include mobile {
+        width: 13rem;
+        height: 14.3rem;
+      }
+    }
   }
 }

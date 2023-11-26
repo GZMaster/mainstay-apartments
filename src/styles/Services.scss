@@ -4,7 +4,7 @@
 
 .services_wrapper {
   display: flex;
-  height: 100vh;
+  // height: 100vh;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-around;
@@ -12,11 +12,17 @@
   padding: 5rem 6.25rem;
   //   gap: 5.62rem;
 
+  @include mobile {
+    padding: 5rem 3.125rem;
+    gap: 2rem;
+  }
+
   > header {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 41.75rem;
+    max-width: 41.75rem;
+    width: 100%;
 
     > h3 {
       color: #808080;
@@ -46,5 +52,11 @@
     gap: 9rem 6rem;
     width: 100%;
     justify-content: space-between;
+
+    @include mobile {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, auto);
+      gap: 5rem 3.125rem;
+    }
   }
 }

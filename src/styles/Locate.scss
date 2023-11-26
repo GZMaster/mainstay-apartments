@@ -3,13 +3,23 @@
 @import "./_fonts.scss";
 
 .locate_wrapper {
-  height: 100vh;
+  // height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: $background;
   padding: 5rem 6.25rem;
 
+  @include mobile {
+    padding: 2.5rem 2rem;
+    gap: 2rem;
+  }
+
   > div {
-    width: 76.375rem;
-    height: 30.625rem;
+    max-width: 76.375rem;
+    width: 100%;
+    max-height: 30.625rem;
+    height: auto;
     flex-shrink: 0;
     border-radius: 1.5rem;
     border: 9px solid #18191c;
@@ -20,13 +30,23 @@
     justify-content: space-between;
     padding: 1.99rem 0.6rem;
 
+    @include mobile {
+      flex-direction: column;
+      height: 100vh;
+      // width: auto;
+    }
+
     > .locate_left {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       gap: 1.25rem;
       padding: calc(4.5rem - 1.99rem) calc(3.88rem - 0.6rem);
- 
+
+      @include mobile {
+        padding: 0;
+      }
+
       > h3 {
         color: #808080;
         font-family: $Montserrat;
@@ -36,6 +56,10 @@
         line-height: 160%; /* 1.5rem */
         font-variant: all-small-caps;
         letter-spacing: 0.21563rem;
+
+        @include mobile {
+          font-size: 0.46875rem;
+        }
       }
 
       > h1 {
@@ -45,6 +69,10 @@
         font-style: normal;
         font-weight: 400;
         line-height: 146.5%; /* 4.395rem */
+
+        @include mobile {
+          font-size: 1.5rem;
+        }
       }
 
       > button {
@@ -62,6 +90,11 @@
         font-style: normal;
         font-weight: 600;
         line-height: normal;
+
+        @include mobile {
+          padding: 0.4rem 1.1rem;
+          font-size: 0.5rem;
+        }
       }
 
       .locate_icons {
@@ -71,13 +104,19 @@
         flex-direction: row;
 
         > p {
-          width: 17.0625rem;
+          max-width: 17.0625rem;
+          width: 100%;
           color: rgba(255, 255, 255, 0.85);
           font-family: $Montserrat;
           font-size: 0.875rem;
           font-style: normal;
           font-weight: 400;
           line-height: 197.5%; /* 1.72813rem */
+
+          @include mobile {
+            width: 8.5rem;
+            font-size: 0.5rem;
+          }
         }
 
         > img {
@@ -88,10 +127,16 @@
     }
 
     > .locate_right {
-      width: 28.53825rem;
+      max-width: 28.53825rem;
+      width: 100%;
       height: 26.70038rem;
       flex-shrink: 0;
       border-radius: 1.5625rem;
+
+      @include mobile {
+        height: 13rem;
+        width: 100%;
+      }
     }
   }
 }

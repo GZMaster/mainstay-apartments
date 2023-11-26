@@ -33,9 +33,7 @@ const Contact = () => {
       </header>
 
       <div>
-        <div className="contact_left">
-          <img src={contactimg} alt="contactimg" />
-        </div>
+        <img className="contact_left" src={contactimg} alt="contactimg" />
 
         <form className="contact_right C_Form" onSubmit={onSubmit}>
           <label className="form_label">Name</label>

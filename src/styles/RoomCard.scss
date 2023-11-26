@@ -3,6 +3,7 @@
 @import "./_fonts.scss";
 
 .roomcard {
+  width: 17.1875rem;
   height: 24.875rem;
   flex-shrink: 0;
   display: flex;
@@ -11,8 +12,14 @@
   background-size: cover;
   background-repeat: no-repeat;
 
+  @include mobile {
+    height: 12.4375rem;
+    width: 8.59375rem;
+    background-size: contain;
+  }
+
   > .roomcard_title {
-    // width: 17.1875rem; 
+    // max-width: 17.1875rem;
     width: 100%;
     height: 5.5625rem;
     margin-top: calc(24.875rem - 5.5625rem);
@@ -22,6 +29,12 @@
     align-items: center;
     justify-content: center;
 
+    @include mobile {
+      width: 8.59375rem;
+      height: 2.78125rem;
+      margin-top: calc(12.4375rem - 2.78125rem);
+    }
+
     > h3 {
       color: #fff;
       text-align: center;
@@ -30,6 +43,10 @@
       font-style: normal;
       font-weight: 600;
       line-height: 160%; /* 1.5rem */
+
+      @include mobile {
+        font-size: 0.46875rem;
+      }
     }
   }
 }
