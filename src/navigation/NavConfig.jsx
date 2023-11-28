@@ -1,7 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import App from "../App";
-import Main, {
+import {
   HomePage,
   AboutPage,
   OptionsPage,
@@ -13,7 +13,7 @@ const NavConfig = () => {
   return (
     <Routes>
       <Route path="/" element={<App />}>
-        <Route index element={<Main />} />
+        <Route index element={<HomePage />} />
         <Route path="home" element={<HomePage />} />
         <Route path="about" element={<AboutPage />} />
         <Route path="bookings" element={<OptionsPage />} />
