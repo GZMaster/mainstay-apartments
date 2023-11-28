@@ -82,9 +82,9 @@
         align-items: center;
         gap: 0.625rem;
         border-radius: 2.625rem;
-        border: 2px solid #3ddcff;
+        border: 2px solid $button-bg;
         background-color: transparent;
-        color: #3ddcff;
+        color: $button-bg;
         font-family: $Montserrat;
         font-size: 1rem;
         font-style: normal;
