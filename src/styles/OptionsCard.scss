@@ -14,6 +14,10 @@
     max-width: 46.5rem;
   }
 
+  @include mobile {
+    max-width: 17.6875rem;
+  }
+
   > img {
     width: 1.875rem;
     height: 1.875rem;

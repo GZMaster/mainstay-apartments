@@ -13,6 +13,10 @@
     width: 15.5rem;
   }
 
+  @include mobile {
+    width: 16.8125rem;
+  }
+
   > img {
     width: 3.375rem;
     height: 3.375rem;

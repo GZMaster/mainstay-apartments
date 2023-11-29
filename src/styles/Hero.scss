@@ -15,6 +15,11 @@
     max-height: 20rem;
   }
 
+  @include mobile {
+    padding: 1.25rem 1.5rem;
+    max-height: fit-content;
+  }
+
   > header {
     display: flex;
     flex-direction: column;
@@ -29,6 +34,11 @@
       width: 100%;
     }
 
+    @include mobile {
+      width: 100%;
+      gap: 2.5rem;
+    }
+
     > h3 {
       color: $sub-header;
       text-align: center;
@@ -40,16 +50,8 @@
       font-variant: all-small-caps;
       letter-spacing: 0.21563rem;
 
-      @include tablet {
-        color: #808080;
-        text-align: center;
-        font-family: $Montserrat;
-        font-size: 0.9375rem;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 160%; /* 1.5rem */
-        font-variant: all-small-caps;
-        letter-spacing: 0.21563rem;
+      @include mobile {
+        font-size: 0.75rem;
       }
     }
 
@@ -62,14 +64,8 @@
       font-weight: 400;
       line-height: normal;
 
-      @include tablet {
-        color: #18191c;
-        text-align: center;
-        font-family: $Atteron;
-        font-size: 4rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
+      @include mobile {
+        font-size: 3rem;
       }
     }
 
@@ -80,18 +76,7 @@
       font-size: 0.9375rem;
       font-style: normal;
       font-weight: 500;
-      line-height: 160%; /* 1.5rem */
-
-      @include tablet {
-        width: 100%;
-        color: #fff;
-        text-align: center;
-        font-family: Montserrat;
-        font-size: 0.9375rem;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 160%; /* 1.5rem */
-      }
+      line-height: 160%;
     }
 
     > button {
@@ -134,5 +119,11 @@
     background-size: cover;
     background-position: center;
     overflow: hidden;
+
+    @include mobile {
+      top: 50%;
+      height: 24.75rem;
+      flex-shrink: 0;
+    }
   }
 }

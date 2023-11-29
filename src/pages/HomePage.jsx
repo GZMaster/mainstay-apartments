@@ -1,5 +1,5 @@
 import React from "react";
-import { Hero, Bookings, Services, Locate, Luxury } from "../components";
+import { Hero, Bookings, Locate, Services, Luxury } from "../components";
 import "../styles/Pages.scss";
 
 const HomePage = () => {

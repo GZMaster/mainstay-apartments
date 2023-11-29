@@ -16,6 +16,11 @@
     gap: 6.5rem;
   }
 
+  @include mobile {
+    padding: 1.25rem;
+    gap: 3.5rem;
+  }
+
   > header {
     display: flex;
     flex-direction: column;
@@ -68,6 +73,11 @@
       justify-content: space-between;
     }
 
+    @include mobile {
+      flex-direction: column-reverse;
+      justify-content: space-between;
+    }
+
     > .contact_right {
       display: inline-flex;
       flex-direction: column;
@@ -75,6 +85,10 @@
       gap: 1.5rem;
 
       @include tablet {
+        width: 100%;
+      }
+
+      @include mobile {
         width: 100%;
       }
 
@@ -107,6 +121,10 @@
         @include tablet {
           width: 90%;
         }
+
+        @include mobile {
+          width: 90%;
+        }
       }
 
       > textarea {
@@ -122,6 +140,10 @@
         background-color: transparent;
 
         @include tablet {
+          width: 90%;
+        }
+
+        @include mobile {
           width: 90%;
         }
       }
@@ -147,6 +169,10 @@
     > .contact_left {
       @include tablet {
         max-width: 46.5rem;
+      }
+
+      @include mobile {
+        max-width: 20.9375rem;
       }
     }
   }

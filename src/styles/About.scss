@@ -16,6 +16,10 @@
     flex-direction: column;
   }
 
+  @include mobile {
+    padding: 1.25rem;
+  }
+
   > .about_left {
     display: flex;
     width: 32rem;
@@ -27,6 +31,11 @@
 
     @include tablet {
       width: 32rem;
+      height: fit-content;
+    }
+
+    @include mobile {
+      width: 20.9375rem;
       height: fit-content;
     }
 
@@ -87,6 +96,12 @@
     @include tablet {
       width: 32rem;
       height: 35.0625rem;
+      flex-shrink: 0;
+    }
+
+    @include mobile {
+      width: 20.9375rem;
+      height: 22.94131rem;
       flex-shrink: 0;
     }
   }
