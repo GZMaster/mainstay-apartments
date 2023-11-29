@@ -10,8 +10,8 @@
     align-items: flex-start;
     background: #18191c;
 
-    @include mobile {
-      padding: 0.78rem 2rem;
+    @include tablet {
+      padding: 1.56rem 5rem;
     }
 
     > p {
@@ -21,10 +21,6 @@
       font-style: normal;
       font-weight: 400;
       line-height: 140%; /* 1.4rem */
-
-      @include mobile {
-        font-size: 0.875rem;
-      }
     }
   }
 }
@@ -37,8 +33,8 @@
   flex-shrink: 0;
   gap: 1.86rem;
 
-  @include mobile {
-    padding: 1.56rem 2rem;
+  @include tablet {
+    padding: 2.81rem 5.9rem;
   }
 
   > h1 {
@@ -50,11 +46,11 @@
     line-height: 146.5%; /* 6.95875rem */
     margin-bottom: 1.45rem;
 
-    @include mobile {
+    @include tablet {
       color: rgba(255, 255, 255, 0.95);
       text-align: center;
-      font-family: Atteron;
-      font-size: 2.4rem;
+      font-family: $Atteron;
+      font-size: 3rem;
       font-style: normal;
       font-weight: 400;
       line-height: 146.5%; /* 4.395rem */
@@ -68,7 +64,7 @@
     justify-content: space-between;
     align-items: center;
 
-    @include mobile {
+    @include tablet {
       display: inline-flex;
       flex-direction: column;
       justify-content: center;
@@ -83,7 +79,7 @@
       align-items: center;
       gap: 1.5rem;
 
-      @include mobile {
+      @include tablet {
         gap: 0.5rem;
       }
 
@@ -95,8 +91,7 @@
         font-weight: 500;
         line-height: 160%; /* 1.5rem */
 
-        @include mobile {
-          font-size: 0.46875rem;
+        @include tablet {
           width: fit-content;
         }
       }

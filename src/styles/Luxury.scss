@@ -10,8 +10,8 @@
   background: $background;
   padding: 5rem 6.25rem;
 
-  @include mobile {
-    padding: 2.5rem 2rem;
+  @include tablet {
+    padding: 2.5rem 5.5rem;
     gap: 2rem;
   }
 
@@ -32,10 +32,6 @@
       line-height: 160%; /* 1.5rem */
       font-variant: all-small-caps;
       letter-spacing: 0.21563rem;
-
-      @include mobile {
-        font-size: 0.46875rem;
-      }
     }
 
     > h1 {
@@ -46,10 +42,6 @@
       font-style: normal;
       font-weight: 400;
       line-height: normal;
-
-      @include mobile {
-        font-size: 1.75rem;
-      }
     }
   }
 
@@ -62,7 +54,7 @@
     // gap: 1.94rem;
     gap: 6rem;
 
-    @include mobile {
+    @include tablet {
       flex-direction: column;
       gap: 2rem;
     }
@@ -100,16 +92,11 @@
         font-style: normal;
         font-weight: 600;
         line-height: normal;
-
-        @include mobile {
-          padding: 0.4rem 1.5rem;
-          font-size: 0.8rem;
-        }
       }
     }
 
     > .luxury_left {
-      @include mobile {
+      @include tablet {
         width: 100%;
         height: 12.125rem;
         flex-shrink: 0;

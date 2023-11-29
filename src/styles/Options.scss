@@ -4,7 +4,6 @@
 
 .options_wrapper {
   display: flex;
-  // height: 100vh;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
@@ -12,9 +11,8 @@
   padding: 5rem 6.25rem;
   gap: 4.75rem;
 
-  @include mobile {
-    padding: 5rem 3.125rem;
-    // max-height: 20rem;
+  @include tablet {
+    padding: 5rem 5rem;
   }
 
   > header {
@@ -42,9 +40,8 @@
       line-height: normal;
       z-index: 2;
 
-      @include mobile {
+      @include tablet {
         max-width: 36.5rem;
-        font-size: 1.8rem;
       }
     }
 
@@ -69,10 +66,13 @@
       height: 24.8125rem;
       flex-shrink: 0;
       overflow: hidden;
+      border-radius: 1.49244rem;
+      background: #18191c;
 
-      @include mobile {
-        width: 12.4rem;
-        height: 9.875rem;
+      @include tablet {
+        width: 23.97856rem;
+        height: 19.75rem;
+        flex-shrink: 0;
       }
 
       > .frontheader {
@@ -102,8 +102,10 @@
     justify-content: space-between;
     align-items: flex-start;
 
-    @include mobile {
+    @include tablet {
       flex-direction: column;
+      align-items: center;
+      gap: 3.4rem ;
     }
   }
 }

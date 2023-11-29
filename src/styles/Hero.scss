@@ -10,8 +10,8 @@
   position: relative;
   padding: 10rem 6.25rem;
 
-  @include mobile {
-    padding: 5rem 3.125rem;
+  @include tablet {
+    padding: 5rem 5.5rem;
     max-height: 20rem;
   }
 
@@ -25,7 +25,7 @@
     z-index: 1;
     gap: 0.75rem;
 
-    @include mobile {
+    @include tablet {
       width: 100%;
     }
 
@@ -40,11 +40,11 @@
       font-variant: all-small-caps;
       letter-spacing: 0.21563rem;
 
-      @include mobile {
+      @include tablet {
         color: #808080;
         text-align: center;
         font-family: $Montserrat;
-        font-size: 0.0875rem;
+        font-size: 0.9375rem;
         font-style: normal;
         font-weight: 500;
         line-height: 160%; /* 1.5rem */
@@ -62,11 +62,11 @@
       font-weight: 400;
       line-height: normal;
 
-      @include mobile {
+      @include tablet {
         color: #18191c;
         text-align: center;
         font-family: $Atteron;
-        font-size: 2rem;
+        font-size: 4rem;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
@@ -82,12 +82,12 @@
       font-weight: 500;
       line-height: 160%; /* 1.5rem */
 
-      @include mobile {
+      @include tablet {
         width: 100%;
         color: #fff;
         text-align: center;
-        font-family: $Montserrat;
-        font-size: 0.4rem;
+        font-family: Montserrat;
+        font-size: 0.9375rem;
         font-style: normal;
         font-weight: 500;
         line-height: 160%; /* 1.5rem */
@@ -109,10 +109,6 @@
       font-style: normal;
       font-weight: 600;
       line-height: normal;
-
-      @include mobile {
-        font-size: 0.5rem;
-      }
     }
   }
 
@@ -127,7 +123,7 @@
 
   > .hero_backgroundimg {
     position: absolute;
-    top: 60%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     max-width: 100%;

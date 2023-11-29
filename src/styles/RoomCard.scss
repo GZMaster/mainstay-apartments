@@ -12,13 +12,15 @@
   background-size: cover;
   background-repeat: no-repeat;
 
-  @include mobile {
-    height: 12.4375rem;
-    width: 8.59375rem;
+  @include tablet {
+    width: 17.1875rem;
+    height: 24.875rem;
+    flex-shrink: 0;
     background-size: contain;
   }
 
   > .roomcard_title {
+    display: flex;
     // max-width: 17.1875rem;
     width: 100%;
     height: 5.5625rem;
@@ -29,10 +31,10 @@
     align-items: center;
     justify-content: center;
 
-    @include mobile {
-      width: 8.59375rem;
-      height: 2.78125rem;
-      margin-top: calc(12.4375rem - 2.78125rem);
+    @include tablet {
+      width: 17.1875rem;
+      height: 5.5625rem;
+      flex-shrink: 0;
     }
 
     > h3 {
@@ -43,9 +45,10 @@
       font-style: normal;
       font-weight: 600;
       line-height: 160%; /* 1.5rem */
+      width: 14.625rem;
 
-      @include mobile {
-        font-size: 0.46875rem;
+      @include tablet {
+        font-size: 0.9375rem;
       }
     }
   }

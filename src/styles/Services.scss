@@ -12,9 +12,9 @@
   padding: 5rem 6.25rem;
   //   gap: 5.62rem;
 
-  @include mobile {
-    padding: 5rem 3.125rem;
-    gap: 2rem;
+  @include tablet {
+    padding: 5rem 5.5rem;
+    gap: 4.5rem;
   }
 
   > header {
@@ -33,10 +33,6 @@
       line-height: 160%; /* 1.5rem */
       font-variant: all-small-caps;
       letter-spacing: 0.21563rem;
-
-      @include mobile {
-        font-size: 0.4375rem;
-      }
     }
 
     > h1 {
@@ -46,10 +42,6 @@
       font-style: normal;
       font-weight: 400;
       line-height: normal;
-
-      @include mobile {
-        font-size: 1.5rem;
-      }
     }
   }
 
@@ -61,7 +53,7 @@
     width: 100%;
     justify-content: space-between;
 
-    @include mobile {
+    @include tablet {
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(3, auto);
       gap: 5rem 3.125rem;

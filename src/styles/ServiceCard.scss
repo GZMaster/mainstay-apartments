@@ -9,8 +9,8 @@
   gap: 1rem;
   width: 17.75rem;
 
-  @include mobile {
-    width: 8rem;
+  @include tablet {
+    width: 15.5rem;
   }
 
   > img {

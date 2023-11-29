@@ -11,9 +11,9 @@
   padding: 5rem 6.25rem;
   gap: 4.25rem;
 
-  @include mobile {
-    padding: 2.5rem 2rem;
-    gap: 2rem;
+  @include tablet {
+    padding: 5rem 5rem;
+    gap: 6.5rem;
   }
 
   > header {
@@ -63,7 +63,7 @@
     width: 100%;
     gap: 6.5rem;
 
-    @include mobile {
+    @include tablet {
       flex-direction: column-reverse;
       justify-content: space-between;
     }
@@ -74,7 +74,7 @@
       align-items: flex-start;
       gap: 1.5rem;
 
-      @include mobile {
+      @include tablet {
         width: 100%;
       }
 
@@ -85,10 +85,6 @@
         font-style: normal;
         font-weight: 500;
         line-height: normal;
-
-        @include mobile {
-          font-size: 0.8rem;
-        }
       }
 
       > input {
@@ -108,8 +104,7 @@
         font-weight: 400;
         line-height: normal;
 
-        @include mobile {
-          font-size: 0.8rem;
+        @include tablet {
           width: 90%;
         }
       }
@@ -126,8 +121,7 @@
         border: 2px solid rgba(0, 0, 0, 0.17);
         background-color: transparent;
 
-        @include mobile {
-          font-size: 0.8rem;
+        @include tablet {
           width: 90%;
         }
       }
@@ -151,9 +145,8 @@
     }
 
     > .contact_left {
-      @include mobile {
-        width: 13rem;
-        height: 14.3rem;
+      @include tablet {
+        max-width: 46.5rem;
       }
     }
   }

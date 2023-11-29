@@ -12,9 +12,9 @@
   padding: 5rem 6.25rem;
   gap: 4rem;
 
-  @include mobile {
-    padding: 5rem 3.125rem;
-    gap: 2rem;
+  @include tablet {
+    padding: 5rem 5.5rem;
+    // gap: 2rem;
   }
 
   > header {
@@ -34,10 +34,6 @@
       line-height: 160%; /* 1.5rem */
       font-variant: all-small-caps;
       letter-spacing: 0.21563rem;
-
-      @include mobile {
-        font-size: 0.46875rem;
-      }
     }
 
     > h1 {
@@ -48,10 +44,6 @@
       font-style: normal;
       font-weight: 400;
       line-height: 146.5%; /* 4.395rem */
-
-      @include mobile {
-        font-size: 1.5rem;
-      }
     }
   }
 
@@ -62,7 +54,7 @@
     justify-content: center;
     gap: 1.94rem;
 
-    @include mobile {
+    @include tablet {
       width: 100%;
     }
 
@@ -75,7 +67,7 @@
       height: auto;
       gap: 1.25rem;
 
-      @include mobile {
+      @include tablet {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
@@ -99,9 +91,20 @@
       font-weight: 600;
       line-height: normal;
 
-      @include mobile {
-        padding: 0.4375rem 1.5rem;
-        font-size: 0.5rem;
+      @include tablet {
+        display: inline-flex;
+        padding: 0.875rem 2.375rem;
+        justify-content: center;
+        align-items: center;
+        gap: 0.625rem;
+        border-radius: 2.625rem;
+        background: #027cba;
+        color: #fff;
+        font-family: $Montserrat;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
       }
     }
   }
